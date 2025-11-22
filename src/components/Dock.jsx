@@ -76,8 +76,7 @@ const Dock = () => {
            openWindow(app.id);
        }
 
-       console.log("toggle called with: ", app)
-        console.log("windows snapshot:", windows)
+     
     }
     return (
         <section id="dock">
