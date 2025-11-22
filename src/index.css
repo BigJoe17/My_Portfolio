@@ -103,8 +103,20 @@ body {
         @apply flex gap-2;
 
         .close {
-            @apply size-3.5 rounded-full bg-[#ff6157] cursor-pointer;
+            @apply relative flex items-center justify-center
+            size-3.5 rounded-full bg-[#ff6157]
+            cursor-pointer transition;
         }
+
+        .close::before {
+            content: "×";
+            @apply absolute text-white text-center text-[13px] font-bold opacity-0 transition;
+        }
+
+        .close:hover::before {
+            @apply opacity-100;
+        }
+
 
         .minimize {
             @apply size-3.5 rounded-full bg-[#ffc030];
@@ -113,6 +125,7 @@ body {
         .maximize {
             @apply size-3.5 rounded-full bg-[#2acb42];
         }
+
     }
 
     #window-header {
