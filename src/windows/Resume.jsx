@@ -2,6 +2,7 @@ import React from 'react'
 import WindowWrapper from "@hoc/WindowWrapper.jsx";
 import {WindowControls} from '@components';
 import { pdfjs, Document, Page } from 'react-pdf';
+import {Download} from "lucide-react";
 
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
@@ -18,7 +19,7 @@ const Resume = () => {
 
             <a href="files/resume.pdf" download className="cursor-pointer"
              title="Download resume "
-            ></a>
+            ><Download className="icon"/></a>
         </div>
         <Document file="files/resume.pdf" >
             <Page pageNumber={1}

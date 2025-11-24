@@ -92,7 +92,7 @@ const blogPosts = [
     },
     {
         id: 3,
-        date: "feb 21, 2025",
+        date: "Feb 21, 2025",
         title: "Unlocking Speed: The Power of Redis in Database Management and Indexing",
         image: "/images/blog4.png",
         link: "https://substack.com/home/post/p-157604122",

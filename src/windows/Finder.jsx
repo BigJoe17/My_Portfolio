@@ -9,7 +9,8 @@ import useWindowStore from "@store/window.js";
 
 
 const Finder = () => {
- const {openWindow} = useWindowStore();
+    const {openWindow} = useWindowStore();
+    const {activeLocation, setActiveLocation} = useLocationStore()
 
      const openItem = (item) => {
          if(item.fileType === "pdf") return openWindow("resume")
@@ -42,7 +43,6 @@ const Finder = () => {
     ))
 
 
-    const {activeLocation, setActiveLocation} = useLocationStore()
 
     return (
         <>
