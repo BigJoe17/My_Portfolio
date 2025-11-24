@@ -77,11 +77,11 @@ const dockApps = [
 const blogPosts = [
     {
         id: 1,
-        date: "Sep 2, 2025",
+        date: "Oct 18, 2025",
         title:
-            "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
+            "Being a Junior Dev in 2025: Reality Check",
         image: "/images/blog1.png",
-        link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+        link: "https://medium.com/p/fe06ac03afea",
     },
     {
         id: 2,
@@ -92,10 +92,10 @@ const blogPosts = [
     },
     {
         id: 3,
-        date: "Aug 15, 2025",
-        title: "The Ultimate Guide to Mastering GSAP Animations",
-        image: "/images/blog3.png",
-        link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+        date: "feb 21, 2025",
+        title: "Unlocking Speed: The Power of Redis in Database Management and Indexing",
+        image: "/images/blog4.png",
+        link: "https://substack.com/home/post/p-157604122",
     },
 ];
 
@@ -225,7 +225,7 @@ const WORK_LOCATION = {
         // ▶ Project 1
         {
             id: 5,
-            name: "Nike Ecommerce Website Application",
+            name: "Zilokraft Trade Platform",
             icon: "/images/folder.png",
             kind: "folder",
             position: "top-10 left-5", // icon position inside Finder
@@ -233,35 +233,35 @@ const WORK_LOCATION = {
             children: [
                 {
                     id: 1,
-                    name: "Nike Project.txt",
+                    name: "zilokraft Project.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
                     position: "top-5 left-10",
                     description: [
-                        "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-                        "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-                        "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-                        "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+                        "Zilokraft is a B2B platform for custom corrugated packaging solutions and international exports.",
+                        "Instead of back-and-forth emails, clients can configure box dimensions, materials, and quantities in real-time.",
+                        "Think of it like a self-service design studio—but for industrial packaging with instant quotes.",
+                        "Built with Next.js and Tailwind for seamless performance, whether you're ordering 100 boxes or 100,000.",
                     ],
                 },
                 {
                     id: 2,
-                    name: "nike.com",
+                    name: "zilokraft.com",
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+                    href: "https://zilo-kraft-motion-design.vercel.app",
                     position: "top-10 right-20",
                 },
                 {
                     id: 4,
-                    name: "nike.png",
+                    name: "zilokraft.png",
                     icon: "/images/image.png",
                     kind: "file",
                     fileType: "img",
                     position: "top-52 right-80",
-                    imageUrl: "/images/project-1.png",
+                    imageUrl: "/images/zilokraft.PNG",
                 },
                 {
                     id: 5,
@@ -278,7 +278,7 @@ const WORK_LOCATION = {
         // ▶ Project 2
         {
             id: 6,
-            name: "AI Resume Analyzer",
+            name: "Hatchways - AI Interview Preparation Platform",
             icon: "/images/folder.png",
             kind: "folder",
             position: "top-52 right-80",
@@ -286,38 +286,49 @@ const WORK_LOCATION = {
             children: [
                 {
                     id: 1,
-                    name: "AI Resume Analyzer Project.txt",
+                    name: "VoicePrep AI Project.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
                     position: "top-5 right-10",
                     description: [
-                        "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-                        "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-                        "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-                        "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
+                        "Hatchways AI is a real-time interview preparation platform where job seekers practice with an AI voice agent that conducts authentic technical interviews.",
+                        "Instead of passive studying, candidates face live coding challenges while answering questions verbally—just like a real interview.",
+                        "Think of it as your personal interview coach—asking behavioral questions, assigning coding problems, reviewing your solutions, and giving instant feedback.",
+                        "Built with Vapi AI for natural voice conversations, integrated code editors for live problem-solving, and Next.js/Tailwind for seamless performance across devices.",
                     ],
                 },
                 {
                     id: 2,
-                    name: "ai-resume-analyzer.com",
+                    name: "hatchways-azure.com",
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+                    href: "https://hatchways-azure.vercel.app",
                     position: "top-20 left-20",
                 },
                 {
                     id: 4,
-                    name: "ai-resume-analyzer.png",
+                    name: "hatchways.png",
                     icon: "/images/image.png",
                     kind: "file",
                     fileType: "img",
                     position: "top-52 left-80",
-                    imageUrl: "/images/project-2.png",
+                    imageUrl: "/images/hatchways.png",
                 },
+
                 {
                     id: 5,
+                    name: "demoFile.png",
+                    icon: "/images/image.png",
+                    kind: "file",
+                    fileType: "img",
+                    position: "top-10 left-50",
+                    imageUrl: "/images/hatchways_practice.png",
+                },
+
+                {
+                    id: 6,
                     name: "Design.fig",
                     icon: "/images/plain.png",
                     kind: "file",
@@ -397,7 +408,7 @@ const ABOUT_LOCATION = {
             kind: "file",
             fileType: "img",
             position: "top-10 left-5",
-            imageUrl: "/images/adrian.jpg",
+            imageUrl: "/images/Josh.jpeg",
         },
         {
             id: 2,
@@ -406,7 +417,7 @@ const ABOUT_LOCATION = {
             kind: "file",
             fileType: "img",
             position: "top-28 right-72",
-            imageUrl: "/images/adrian-2.jpg",
+            imageUrl: "/images/casual_me.jpg",
         },
         {
             id: 3,
@@ -415,7 +426,7 @@ const ABOUT_LOCATION = {
             kind: "file",
             fileType: "img",
             position: "top-52 left-80",
-            imageUrl: "/images/adrian-3.jpeg",
+            imageUrl: "/images/conf_joshua5.jpeg",
         },
         {
             id: 4,
@@ -425,12 +436,13 @@ const ABOUT_LOCATION = {
             fileType: "txt",
             position: "top-60 left-5",
             subtitle: "Meet the Developer Behind the Code",
-            image: "/images/adrian.jpg",
+            image: "/images/conf_joshua1.jpeg",
             description: [
-                "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-                "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-                "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-                "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+                "Hey! I’m Joshua 👋—BigJoe, a software engineer and emerging tech entrepreneur building smart, scalable solutions for businesses.",
+                "I work with JavaScript, React, Node.js, and MongoDB—while leveling up in TypeScript, Go, Python, AI/ML, and Web3 to create efficient, modern systems.",
+                "I’m big on clean UI, meaningful UX, and writing code that’s reliable, readable, and designed to solve real business problems.",
+                "Core Values: Excellence in execution, Integrity in process, Innovation in thinking, and Impact that drives businesses forward.",
+                "Outside dev work, you'll find me refining product ideas, tweaking layouts at odd hours, or learning new tech concepts to stay ahead 😄",
             ],
         },
     ],
