@@ -132,28 +132,28 @@ const socials = [
         text: "Github",
         icon: "/icons/github.svg",
         bg: "#f4656b",
-        link: "https://github.com/JavaScript-Mastery-Pro",
+        link: "https://github.com/BigJoe17",
     },
     {
         id: 2,
-        text: "Platform",
-        icon: "/icons/atom.svg",
+        text: "youTube",
+        icon: "/icons/youtube.svg",
         bg: "#4bcb63",
-        link: "https://jsmastery.com/",
+        link: "https://www.youtube.com/@bigjoe100",
     },
     {
         id: 3,
         text: "Twitter/X",
         icon: "/icons/twitter.svg",
         bg: "#ff866b",
-        link: "https://x.com/jsmasterypro",
+        link: "https://x.com/OlugotunJ",
     },
     {
         id: 4,
         text: "LinkedIn",
         icon: "/icons/linkedin.svg",
         bg: "#05b6f6",
-        link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+        link: "https://www.linkedin.com/in/joshuaolugotun/",
     },
 ];
 
@@ -188,21 +188,159 @@ const photosLinks = [
 const gallery = [
     {
         id: 1,
-        img: "/images/gal1.png",
+        img: "/images/gal1.jpeg",
     },
     {
         id: 2,
-        img: "/images/gal2.png",
+        img: "/images/gal2.jpeg",
     },
     {
         id: 3,
-        img: "/images/gal3.png",
+        img: "/images/gal3.jpeg",
     },
     {
         id: 4,
-        img: "/images/gal4.png",
+        img: "/images/gal4.jpeg",
     },
 ];
+
+const LIBRARY_PHOTOS = {
+    id: 1,
+    type: "library",
+    name: "Library",
+    icon: "/icons/gicon1.svg",
+    kind: "folder",
+    children: [
+        {
+            id: 1,
+            img: "/images/gal1.jpeg",
+        },
+        {
+            id: 2,
+            img: "/images/gal2.jpeg",
+        },
+        {
+            id: 3,
+            img: "/images/gal3.jpeg",
+        },
+        {
+            id: 4,
+            img: "/images/gal4.jpeg",
+        },
+    ],
+};
+
+const MEMORIES_PHOTOS = {
+    id: 2,
+    type: "memories",
+    name: "Memories",
+    icon: "/icons/gicon2.svg",
+    kind: "folder",
+    children: [
+        {
+            id: 1,
+            img: "/images/gal2.jpeg",
+        },
+        {
+            id: 2,
+            img: "/images/gal3.jpeg",
+        },
+        {
+            id: 3,
+            img: "/images/gal1.jpeg",
+        },
+        {
+            id: 4,
+            img: "/images/gal4.jpeg",
+        },
+    ],
+};
+
+const PLACES_PHOTOS = {
+    id: 3,
+    type: "places",
+    name: "Places",
+    icon: "/icons/file.svg",
+    kind: "folder",
+    children: [
+        {
+            id: 1,
+            img: "/images/amz_visit.jpeg",
+        },
+        {
+            id: 2,
+            img: "/images/amz_visit2.jpeg",
+        },
+        {
+            id: 3,
+            img: "/images/amz_visit3.jpeg",
+        },
+        {
+            id: 4,
+            img: "/images/conf_joshua5.jpeg",
+        },
+    ],
+};
+
+const PEOPLE_PHOTOS = {
+    id: 4,
+    type: "people",
+    name: "People",
+    icon: "/icons/gicon4.svg",
+    kind: "folder",
+    children: [
+        {
+            id: 1,
+            img: "/images/conf_joshua6.jpeg",
+        },
+        {
+            id: 2,
+            img: "/images/gal5.jpeg",
+        },
+        {
+            id: 3,
+            img: "/images/gal10.jpeg",
+        },
+        {
+            id: 4,
+            img: "/images/gal8.jpeg",
+        },
+    ],
+};
+
+const FAVORITES_PHOTOS = {
+    id: 5,
+    type: "favorites",
+    name: "Favorites",
+    icon: "/icons/gicon5.svg",
+    kind: "folder",
+    children: [
+        {
+            id: 1,
+            img: "/images/amz_visit.jpeg",
+        },
+        {
+            id: 2,
+            img: "/images/gal3.jpeg",
+        },
+         {
+            id: 3,
+            img: "/images/amz_visit3.jpeg",
+        },
+         {
+            id: 4,
+            img: "/images/hack7.jpeg",
+        },
+    ],
+};
+
+export const photoCategories = {
+    library: LIBRARY_PHOTOS,
+    memories: MEMORIES_PHOTOS,
+    places: PLACES_PHOTOS,
+    people: PEOPLE_PHOTOS,
+    favorites: FAVORITES_PHOTOS,
+};
 
 export {
     navLinks,
@@ -368,7 +506,7 @@ const WORK_LOCATION = {
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+                    href: "https://github.com/BigJoe17/FoodOrderingApp",
                     position: "top-10 right-20",
                 },
                 {

@@ -27,7 +27,7 @@ const projects = locations.work?.children ?? [];
     return <section id="home">
       <ul>
         {projects.map((project) => (
-            <li  key={project.id} className={clsx("gtoup folder", project.windowPosition)}
+            <li  key={project.id} className={clsx("group folder", project.windowPosition)}
             onClick={() => handleOpenProjectFinder(project)}
             >
                 <img src={"/images/folder.png"} alt={project.name} />

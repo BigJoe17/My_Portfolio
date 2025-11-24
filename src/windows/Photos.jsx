@@ -1,12 +1,35 @@
-import React from 'react'
+import React, {useState} from 'react'
 import useWindowStore from "@store/window"
 import WindowWrapper from "@hoc/WindowWrapper.jsx"
-import {photosLinks, gallery} from "@constants/index.js"
+import {photoCategories} from "@constants/index.js"
 import {WindowControls} from "@components"
 import {Mail, Search} from "lucide-react"
+import clsx from "clsx"
 
 const Photos = () => {
     const {openWindow} = useWindowStore()
+    const [activeCategory, setActiveCategory] = useState(photoCategories.library)
+
+    const renderSidebarList = (name, items) => (
+        <div>
+            <h3>{name}</h3>
+            <ul>
+                {items.map((item) => (
+                    <li 
+                        key={item.id} 
+                        onClick={() => setActiveCategory(item)}
+                        className={clsx(item.id === activeCategory.id ? "active" : "not-active")}
+                    >
+                        <img src={item.icon} className="w-4" alt={item.name}/>
+                        <p className="text-sm font-medium truncate">
+                            {item.name}
+                        </p>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    )
+
     return (
         <>
             <div id="window-header">
@@ -17,22 +40,14 @@ const Photos = () => {
                 </div>
             </div>
 
-            <div className="flex w-full">
-                <div  className="sidebar" >
-                    <h2>Photos</h2>
-                    <ul>
-                        {photosLinks.map(({id, icon, title}) => (
-                            <li key={id}>
-                                <img src={icon} alt={title}/>
-                                <p>{title}</p>
-                            </li>
-                        ))}
-                    </ul>
+            <div className="bg-white flex h-full">
+                <div className="sidebar">
+                    {renderSidebarList("Photos", Object.values(photoCategories))}
                 </div>
 
                 <div className="gallery">
                     <ul>
-                        {gallery.map(({id, img}) => (
+                        {activeCategory?.children.map(({id, img}) => (
                             <li key={id}
                                 onClick={() => openWindow('imgfile', {
                                     id,
@@ -42,8 +57,7 @@ const Photos = () => {
                                     fileType: "img",
                                     imageUrl: img,
                                 })}>
-
-                                <img src={img} alt={`Gallery Image${id}`}/>
+                                <img src={img} alt={`Gallery Image ${id}`}/>
                             </li>
                         ))}
                     </ul>
